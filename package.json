@@ -1,0 +1,24 @@
+{
+  "name": "cometwatcher",
+  "version": "1.0.0",
+  "description": "A TypeScript-based astronomical observation tool that analyzes comet disintegration patterns and predicts fragmentation timelines using real-time data processing",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "astronomy",
+    "comet",
+    "disintegration",
+    "prediction",
+    "typescript"
+  ],
+  "author": "CometWatcher Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.9"
+  }
+}
