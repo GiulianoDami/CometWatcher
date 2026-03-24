@@ -1,0 +1,37 @@
+{
+    "language": "TypeScript",
+    "dependency_file": "package.json",
+    "dependencies": ["typescript", "@types/node"],
+    "files": [
+        {
+            "path": "src/cometwatcher.ts",
+            "description": "Main module containing core classes for comet analysis and prediction",
+            "exports": ["class CometAnalyzer", "class FragmentationPredictor"]
+        },
+        {
+            "path": "src/types.ts",
+            "description": "Type definitions for comet data structures and analysis results",
+            "exports": ["interface CometData", "interface AnalysisResult", "interface PredictionResult"]
+        },
+        {
+            "path": "src/trajectory.ts",
+            "description": "Orbital mechanics calculations for comet trajectories",
+            "exports": ["function calculateOrbit(cometData)", "function predictPosition(date)"]
+        },
+        {
+            "path": "src/patterns.ts",
+            "description": "Fragmentation pattern recognition and historical comparison algorithms",
+            "exports": ["function detectPatterns(data)", "function compareWithHistorical(comet)"]
+        },
+        {
+            "path": "src/predictor.ts",
+            "description": "Predictive modeling engine for future fragmentation events",
+            "exports": ["function predictNextBreakup(cometData, targetDate)"]
+        },
+        {
+            "path": "src/index.ts",
+            "description": "Entry point exposing the public API",
+            "imports_from_other_files": ["cometwatcher.ts", "types.ts"]
+        }
+    ]
+}
